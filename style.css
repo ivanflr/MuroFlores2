@@ -147,6 +147,18 @@ div.last {
   padding-bottom: 20px;
 }
 
+.calculator {
+  text-align: center;
+}
+
+.table {
+  align-content: center;
+}
+
+.EndGraphic {
+  margin-bottom: 40px;
+}
+
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
