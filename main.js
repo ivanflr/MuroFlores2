@@ -1,39 +1,19 @@
 $(document).ready(function () {
 	$("input").on("keyup keydown keypress change", function (e) {
-		var this_input = $(this),
-			this_row = this_input.closest(".item"),
-			quantity = parseFloat(this_row.find(".qty").val()),
-			cost = parseFloat(this_row.find(".cost").val()),
-			tariff = parseFloat(this_row.data("tariff-percent")),
-			pre_tariff_cost = (cost * quantity),
-			post_tariff_cost = (pre_tariff_cost + (pre_tariff_cost * (tariff / 100)));
-
-		// console.log("quantity", quantity);//
-
-		this_row.find(".pre_total").find("span").text(pre_tariff_cost);
-		this_row.find(".post_total").find("span").text(post_tariff_cost);
-
-		var pre_total = 0,
-			post_total = 0;
-
-		$(".pre_total").each(function () {
-
-			var this_pre_total = parseFloat($(this).find("span").text());
-			pre_total = pre_total + this_pre_total;
-
-		});
-
-		$(".post_total").each(function () {
-
-			var this_post_total = parseFloat($(this).find("span").text());
-			post_total = post_total + this_post_total;
-
-			$("#pre_total").find("span").text(pre_total);
-			$("#post_total").find("span").text(post_total);
-
-		});
-
+		var ppw = parseFloat($(this).val()),
+			// Formulas based on excise tax
+			ny_cost = (ppw * 13).toFixed(2),
+			cr_cost = (ppw * 9).toFixed(2),
+			ny_profit = (ppw * 4.35).toFixed(2),
+			va_profit = (ppw * .3).toFixed(2),
+			ny_loss = (ny_profit * 52).toFixed(2),
+			va_gain = (va_profit * 52).toFixed(2);
+		$("#outPuts").find("span").text(ny_cost);
+		$("#costs").find("span").text(ny_profit);
+		$("#crCost").find("span").text(cr_cost);
+		$("#vaProfit").find("span").text(va_profit);
+		$("#nyl").find("span").text(ny_loss);
+		$("#vap").find("span").text(va_gain);
 	});
-});
 
-// Float =  number that has decimals//
+});

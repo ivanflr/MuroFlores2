@@ -74,8 +74,9 @@ h1 {
   text-shadow: .5px .5px #ff0000;
 }
 
-.audio1 {
+.input {
   margin: 0 auto;
+  margin-bottom: 40px;
   padding-left: 10px;
 }
 
@@ -83,6 +84,10 @@ p {
   text-align: left;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+figure {
+  margin-top: 10px;
 }
 
 figcaption {
