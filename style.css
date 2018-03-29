@@ -58,6 +58,11 @@ h1 {
   text-align: center;
   font-weight: 8800;
   font-size: 40px;
+  font-family: helvetica;
+}
+
+h2 {
+  font-family: helvetica;
 }
 
 #headline {
@@ -84,10 +89,21 @@ p {
   text-align: left;
   padding-left: 15%;
   padding-right: 15%;
+  font-family: helvetica;
 }
 
-figure {
+input {
+  background-color: #DCDCDC;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: helvetica;
+}
+
+img {
   margin-top: 10px;
+  height: auto;
+  max-width: 100%;
 }
 
 figcaption {
@@ -98,70 +114,22 @@ figcaption {
   margin-right: 5px;
 }
 
-div.hotspot {
-  position: relative;
-  max-width: 980px;
-  margin: 0 auto;
-}
-
-div.hotspot img {
-  width: 100%;
-}
-
-div.modal {
-  /*viewport height */
-  height: auto;
-  /*viewport width */
-  width: 100vw;
-  position: fixed;
-  /*distance between object or the top of the parent */
-  top: 200%;
-  /*objects distance from that border of the screen */
-  left: 0;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.65);
-  transition: top 0.5s ease-in-out;
-}
-
-div.modal.active {
-  top: 0;
-}
-
-div.modal div.inner {
-  height: 100%;
-  width: 100%;
-  background-color: #FFFFFF;
-  padding: 1em;
-}
-
 div.last {
-  padding-bottom: 20px;
-}
-
-.spot {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #000000;
-}
-
-.container1 {
-  display: block;
-  margin: 0 auto;
   padding-bottom: 20px;
 }
 
 .calculator {
   text-align: center;
+  align-items: center;
 }
 
 .table {
-  align-content: center;
+  align-items: center;
 }
 
 .EndGraphic {
   margin-bottom: 40px;
+  align-items: center;
 }
 
 /* Tablet/Desktop overrides */
@@ -200,9 +168,4 @@ div.last {
       margin-right: 550px;
       margin-top: 5px;
       font-size: 35px;
-    }
-    div.hotspot img {
-      width: 70%;
-      display: block;
-      margin: 0 auto;
     }
