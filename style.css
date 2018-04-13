@@ -86,6 +86,13 @@ h2 {
   font-size: 15px;
   text-shadow: .5px .5px #ff0000;
 }
+#figure {
+  margin-top: 10px;
+  height: auto;
+  max-width: 93%;
+  padding-right: 10px;
+  padding-left: 40px;
+}
 
 .input {
   margin: 0 auto;
@@ -113,8 +120,6 @@ img {
   margin-top: 10px;
   height: auto;
   max-width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 
@@ -200,4 +205,8 @@ table {
       align-items: center;
       margin-left: 300px;
 
+    }
+
+    .container {
+      margin-bottom: 40px;
     }
