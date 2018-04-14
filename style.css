@@ -167,6 +167,10 @@ table {
 #nyl{
   padding-right: 10px;
 }
+
+.eg{
+  margin: 0 auto;
+}
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
