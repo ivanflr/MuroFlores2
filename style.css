@@ -151,9 +151,16 @@ table {
 
 .EndGraphic {
   margin-bottom: 40px;
-  align-items: center;
+  margin: 0 auto;
 }
 
+.cal{
+  border: 1px solid black;
+}
+
+#nyl{
+  padding-right: 10px;
+}
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
