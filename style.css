@@ -158,7 +158,9 @@ table {
 .cal{
   border: 1px solid black;
 }
-
+.eg{
+  margin: 0 auto;
+}
 #nyl{
   padding-right: 10px;
 }
