@@ -63,6 +63,7 @@ h1 {
 
 h2 {
   font-family: helvetica;
+
 }
 
 #headline {
@@ -92,6 +93,10 @@ h2 {
   max-width: 93%;
   padding-right: 10px;
   padding-left: 40px;
+}
+#span {
+  font-size: 20px;
+  font-family: helvetica;
 }
 
 .input {
@@ -158,9 +163,7 @@ table {
 .cal{
   border: 1px solid black;
 }
-.eg{
-  margin: 0 auto;
-}
+
 #nyl{
   padding-right: 10px;
 }
