@@ -75,7 +75,7 @@ h2 {
   font-size: .5em;
   text-align: left;
   margin-top: auto;
-  text-shadow: 2px 2px #ff0000;
+  text-shadow: 1.5px 1.5px #ff0000;
   padding-bottom: 10px;
 
 }
@@ -138,6 +138,7 @@ div.last {
 .calculator {
   text-align: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 table {
