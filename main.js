@@ -8,12 +8,14 @@ $(document).ready(function () {
 			va_profit = (ppw * .3).toFixed(2),
 			ny_loss = (ny_profit * 52).toFixed(2),
 			va_gain = (va_profit * 52).toFixed(2);
-		$("#outPuts").find("span").text(ny_cost);
-		$("#costs").find("span").text(ny_profit);
-		$("#crCost").find("span").text(cr_cost);
-		$("#vaProfit").find("span").text(va_profit);
-		$("#nyl").find("span").text(ny_loss);
-		$("#vap").find("span").text(va_gain);
+		$("#outPuts").find("span").text("$" + ny_cost);
+		$("#costs").find("span").text("$" + ny_profit);
+		$("#crCost").find("span").text("$" + cr_cost);
+		$("#vaProfit").find("span").text("$" + va_profit);
+		$("#nyl").find("span").text("$" + ny_loss);
+		$("#vap").find("span").text("$" + va_gain);
 	});
+
+
 
 });
