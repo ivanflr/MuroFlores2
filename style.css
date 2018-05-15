@@ -63,7 +63,6 @@ h1 {
 
 h2 {
   font-family: helvetica;
-
 }
 
 #headline {
@@ -72,13 +71,13 @@ h2 {
   margin-top: auto;
   text-shadow: 2px 2px #ff0000;
 }
+
 #subhead {
   font-size: .5em;
   text-align: left;
   margin-top: auto;
   text-shadow: 1.5px 1.5px #ff0000;
   padding-bottom: 10px;
-
 }
 
 #byline {
@@ -87,6 +86,7 @@ h2 {
   font-size: 15px;
   text-shadow: .5px .5px #ff0000;
 }
+
 #figure {
   margin-top: 10px;
   height: auto;
@@ -94,9 +94,15 @@ h2 {
   padding-right: 10px;
   padding-left: 40px;
 }
+
 #span {
   font-size: 20px;
   font-family: helvetica;
+}
+
+#explainer {
+  font-style: italic;
+  font-size: 14px;
 }
 
 .input {
@@ -127,7 +133,6 @@ img {
   max-width: 100%;
 }
 
-
 figcaption {
   padding-top: 5px;
   text-align: center;
@@ -149,8 +154,8 @@ div.last {
 table {
   align-items: center;
   margin-left: 70px;
-
 }
+
 .container {
   margin-bottom: 40px;
 }
@@ -160,13 +165,10 @@ table {
   margin: 0 auto;
 }
 
-.cal{
+.cal {
   border: 1px solid black;
 }
 
-#nyl{
-  padding-right: 10px;
-}
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
@@ -196,7 +198,6 @@ table {
       max-width: 50%;
       margin: 0 auto;
       font-size: 15px;
-
     }
     #headline {
       margin-top: 10px;
@@ -216,10 +217,12 @@ table {
     }
     table {
       align-items: center;
-      margin-left: 300px;
-
+      margin-left: 110px;
     }
-
+    #explainer {
+      font-style: italic;
+      font-size: 10px;
+    }
     .container {
       margin-bottom: 40px;
     }
